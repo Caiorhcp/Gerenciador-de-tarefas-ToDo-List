@@ -1,0 +1,133 @@
+/*  Geral */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #000000;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to left, rgb(160, 160, 211) , rgb(176, 189, 135), rgb(148, 134, 156), rgb(194, 151, 158),rgb(103, 152, 172) );
+  background-size: 500%, 100%;
+  animation: background-animation 5s infinite alternate;
+}
+
+button {
+  background-color: #ffffff;
+  color: #102f5e;
+  border: 2px solid #102f5e;
+  padding: 0.3rem 0.6rem;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.6s;
+}
+
+button:hover {
+  background-color: #102f5e;
+  color: #ffffff;
+}
+button:hover > i {
+  background-color: #ffffff;
+}
+
+button i {
+  color: #102f5e;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+input,
+select {
+  padding: 0.25rem 0.5rem;
+}
+
+
+/*  Cabeçalho */
+
+.containerGerenciador {
+  max-width: 450px;
+  margin: 3rem auto;
+  background-color: #ffffff67;
+  padding: 1.5rem;
+  border-radius: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.containerGerenciador div {
+  display: flex;
+  gap: 5px;
+  
+}
+
+.containerGerenciador header {
+  text-align: center;
+  padding: 0 1rem 1rem;
+  border-bottom: 1px solid #ccc;
+
+}
+
+.containerGerenciador header h1 {
+  color: rgba(71, 40, 129, 0.473);
+}
+
+/*  Formularios */
+
+
+#form-g{
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+#form-g p{
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+#form-g, input {
+  border-radius: 5px;
+
+}
+
+#form-g, button{
+  height: 30px;
+  width: 30px;
+  border-radius: 10px;
+}
+
+
+#lista, ul li{
+  margin-top:5px;
+  margin-bottom: 5px;
+  color: #102f5e;
+  padding: 0.3rem 0.6rem;
+  font-size: 1rem;
+  display: grid;
+  transition: 0.6s;
+}
+
+footer {
+  display: flex;
+  position: absolute;
+  bottom: 1px;
+  left: 5px;
+}
+
+footer p {
+  color: #000000;
+}
+
+/* background-animation*/
+
+@keyframes background-animation {
+  0% {
+  background: position x 0%;  
+}
+100%{
+  background-position-x:100% ;
+}
+}
